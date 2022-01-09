@@ -1,14 +1,10 @@
 import './css/App.css';
 import Home from './components/Home';
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { FIREBASE_API_KEY } from '../secret';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { FIREBASE_API_KEY } from './secret';
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: FIREBASE_API_KEY,
   authDomain: "nfl-data-6af24.firebaseapp.com",
