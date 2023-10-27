@@ -3,6 +3,7 @@ import Home from './components/Home';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { FIREBASE_API_KEY } from './secret';
+import Calendar from './components/Calendar';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -22,7 +23,8 @@ const analytics = getAnalytics(app);
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Calendar />
+      {/* <Home /> */}
     </div>
   );
 }
